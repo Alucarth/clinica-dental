@@ -8,11 +8,28 @@ window._ = require('lodash');
  */
 
 try {
-    window.Popper = require('popper.js').default;
+    // window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    window.dt = require( 'datatables.net-responsive-bs' )( window.$ );
 } catch (e) {}
+
+    require('admin-lte');
+    require('admin-lte/plugins/input-mask/jquery.inputmask.js');
+    require('admin-lte/plugins/input-mask/jquery.inputmask.date.extensions.js');
+    require('admin-lte/plugins/input-mask/jquery.inputmask.extensions.js');
+    require('admin-lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js');
+    require('admin-lte/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js');
+
+    require('admin-lte/bower_components/jquery-ui/jquery-ui.min.js');
+    require('admin-lte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js');
+
+    window.jsPDF = require('jspdf');
+    window.Chart = require('chart.js');
+    window.moment = require('moment');
+
+    import "fullcalendar";
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
