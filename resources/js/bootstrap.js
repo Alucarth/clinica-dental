@@ -12,7 +12,9 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    // require( 'datatables.net-dt' )(window.$);
     window.dt = require( 'datatables.net-responsive-bs' )( window.$ );
+    // window.dt = require( 'datatables.net' )();
 } catch (e) {}
 
     require('admin-lte');

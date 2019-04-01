@@ -9,6 +9,20 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import VueTheMask from 'vue-the-mask';
+
+import {DibujarDiente} from './keyrushelper';
+import {DibujarDienteRojo} from './keyrushelper';
+
+// console.log()
+// import Multiselect from 'vue-multiselect';
+window.DibujarDienteRojo = DibujarDienteRojo;
+window.DibujarDiente = DibujarDiente;
+window.VueMultiselect = require('vue-multiselect');
+// window.DibujarDiente = {DibujarDiente} = require('./keyrushelper');;
+// window.DibujarDienteRojo = {DibujarDienteRojo} = require('./keyrushelper');;
+Vue.use(VueTheMask);
+Vue.component('vue-multiselect', require('vue-multiselect').default);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

@@ -16,6 +16,32 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::group(['middleware' => 'auth'], function () {
+   
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('paciente','PacienteController');
+    Route::resource('pacientes','PacienteController');
+    Route::resource('odontologos','OdontologoController');
+    // Route::resource('citas','CitaController');
+    // Route::resource('odontograma','OdontogramaController');
+    
+    Route::get('/home', 'HomeController@index');
+    
+    Route::get('paciente/historial/{id}','PacienteController@historial');
+    
+    Route::get('paciente/odontograma/{id}','PacienteController@odontograma');
+    Route::get('paciente/anamnesis/{id}','PacienteController@anamnesis');
+    Route::get('paciente/tratamientos/{id}','PacienteController@tratamientos');
+    Route::get('paciente/pagos/{id}','PacienteController@pagos');
+    
+    // Route::post('anamnesis','PacienteController@storeAnamnesis');
+    // Route::post('tratamientos','PacienteController@storeTratamientos');
+    // Route::post('pagos','PacienteController@storePagos');
+    
+    
+    //reportes rutas
+    
+    Route::get('reporte_historial/{id}','PacienteController@reporte_historial');
+    
+    
+});
+    
