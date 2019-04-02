@@ -6572,6 +6572,13 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
+vue-switches@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vue-switches/-/vue-switches-2.0.1.tgz#f23436259c7fe4ffca9c4a6df49ac78941e20a20"
+  integrity sha512-rDqBtK3TKy1pEvyZeWmnSHVeXqAcn+ozch7LiNThBzr1QMjg5rhvqBY7uWeli/baDDslf6CXmBJbHPwASJLqoA==
+  dependencies:
+    vue "^2.2.6"
+
 vue-template-compiler@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
@@ -6589,7 +6596,7 @@ vue-the-mask@^0.11.1:
   resolved "https://registry.yarnpkg.com/vue-the-mask/-/vue-the-mask-0.11.1.tgz#91ee01008354ae57bccc79bb61b65f32d971d9d5"
   integrity sha512-UquSfnSWejD0zAfcD+3jJ1chUAkOAyoxya9Lxh9acCRtrlmGcAIvd0cQYraWqKenbuZJUdum+S174atv2AuEHQ==
 
-vue@^2.5.17:
+vue@^2.2.6, vue@^2.5.17:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
 

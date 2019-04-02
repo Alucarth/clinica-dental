@@ -64,7 +64,7 @@
 					v-model="odontologo"
 					:options="odontologos"
 					id="odontologo"
-					placeholder="Seleccionar Codigo" 
+					placeholder="Seleccionar Odontologo" 
 					select-label="Seleccionar"
 					deselect-label="Remover"
 					selected-label="Seleccionado"

@@ -21,6 +21,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('pacientes','PacienteController');
     Route::resource('odontologos','OdontologoController');
+    Route::resource('tratamientos','TratamientoController');
     // Route::resource('citas','CitaController');
     // Route::resource('odontograma','OdontogramaController');
     
@@ -30,9 +31,10 @@ Route::group(['middleware' => 'auth'], function () {
     
     Route::get('paciente/odontograma/{id}','PacienteController@odontograma');
     Route::get('paciente/anamnesis/{id}','PacienteController@anamnesis');
-    Route::get('paciente/tratamientos/{id}','PacienteController@tratamientos');
     Route::get('paciente/pagos/{id}','PacienteController@pagos');
     
+    Route::get('paciente/tratamientos/{id}','TratamientoController@tratamientos');
+    Route::get('paciente/tratamientos/crear/{id}','TratamientoController@crear');
     // Route::post('anamnesis','PacienteController@storeAnamnesis');
     // Route::post('tratamientos','PacienteController@storeTratamientos');
     // Route::post('pagos','PacienteController@storePagos');

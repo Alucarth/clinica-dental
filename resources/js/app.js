@@ -14,14 +14,12 @@ import VueTheMask from 'vue-the-mask';
 import {DibujarDiente} from './keyrushelper';
 import {DibujarDienteRojo} from './keyrushelper';
 
-// console.log()
-// import Multiselect from 'vue-multiselect';
 window.DibujarDienteRojo = DibujarDienteRojo;
 window.DibujarDiente = DibujarDiente;
 window.VueMultiselect = require('vue-multiselect');
-// window.DibujarDiente = {DibujarDiente} = require('./keyrushelper');;
-// window.DibujarDienteRojo = {DibujarDienteRojo} = require('./keyrushelper');;
+window.spanish_lang = require('./datatable_spanish');
 Vue.use(VueTheMask);
+
 Vue.component('vue-multiselect', require('vue-multiselect').default);
 /**
  * The following block of code may be used to automatically register your
@@ -36,6 +34,7 @@ Vue.component('vue-multiselect', require('vue-multiselect').default);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('crear-paciente', require('./components/paciente/create.vue').default);
+Vue.component('editar-tratamiento', require('./components/tratamiento/edit.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -43,5 +42,5 @@ Vue.component('crear-paciente', require('./components/paciente/create.vue').defa
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
 });

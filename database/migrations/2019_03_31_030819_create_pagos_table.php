@@ -15,9 +15,9 @@ class CreatePagosTable extends Migration
     {
         Schema::create('pagos', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('monto');
+            $table->decimal('monto',8,2)->nullable();
             $table->string('descripcion');
-
+            
             $table->unsignedBigInteger('tratamiento_id');
             $table->foreign('tratamiento_id')->references('id')->on('tratamientos');
             $table->unsignedBigInteger('odontologo_id');

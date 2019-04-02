@@ -30,10 +30,10 @@
   
                       if($diente)
                       {
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       } 
                       else{
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       }
                       
 
@@ -53,10 +53,10 @@
 
                       if($diente)
                       {
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       } 
                       else{
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       }
                       
 
@@ -116,23 +116,23 @@
                     //  echo ($diente);
                       if($diente)
                       {
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       } 
                       else{
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       }
                       
 
                     }
                     ?>
-                    {{-- <td><button class='btn btn-sm'> 48 </button></td>
-                    <td><button class='btn btn-sm'> 47 </button></td>
-                    <td><button class='btn btn-sm'> 46 </button></td>
-                    <td><button class='btn btn-sm'> 45 </button></td>
-                    <td><button class='btn btn-sm'> 44 </button></td>
-                    <td><button class='btn btn-sm'> 43 </button></td>
-                    <td><button class='btn btn-sm'> 42 </button></td>
-                    <td><button class='btn btn-sm'> 41 </button></td> --}}
+                    {{-- <td><button class='btn btn-default btn-sm'> 48 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 47 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 46 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 45 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 44 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 43 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 42 </button></td>
+                    <td><button class='btn btn-default btn-sm'> 41 </button></td> --}}
                     <td>  </td>
                     <?php 
                    
@@ -145,10 +145,10 @@
                      // echo ($diente);
                       if($diente)
                       {
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='".$diente['vestibular']."' data-palatino='".$diente['palatino']."' data-oclusal='".$diente['oclusal']."' data-mesial='".$diente['mesial']."' data-distal='".$diente['distal']."' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       } 
                       else{
-                        echo "<td> <button class='btn btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
+                        echo "<td> <button class='btn btn-default btn-sm' data-toggle='modal' data-target='#modal_diente' data-diente-id='".$i."' data-vestibular='0' data-palatino='0' data-oclusal='0' data-mesial='0' data-distal='0' data-paciente='".$paciente->id."'> ".$i." </button> </td>";
                       }
                       
 

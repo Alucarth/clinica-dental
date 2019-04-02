@@ -88,39 +88,38 @@
 
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{ Auth::user()->name }} <span
-                    class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src='{{asset("imagenes/user.png") }}' class="img-circle" alt="User Image">
-
-                    <p>
-                      {{ Auth::user()->name." " }}
-                      <small>{{ Auth::user()->email }}</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Perfil</a>
-                    </div>
-                    <div class="pull-right">
-                      <form id="logout-form" action="{{ url('/logout') }}" method="POST">
-                        {{ csrf_field() }}
-                        <button type="submit" class="btn btn-default">Salir</button>
-                      </form>
-
-                    </div>
-                  </li>
-
-
-                </ul>
-              <li>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Round&hairColor=Auburn&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Light' class="user-image" alt="User Image">
+                    <span class="hidden-xs">  {{ Auth::user()->name }} </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- User image -->
+                    <li class="user-header">
+                      <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Round&hairColor=Auburn&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Light' class="img-circle" alt="User Image">
+      
+                      <p>
+                          {{ Auth::user()->name." " }}
+                        <small>{{ Auth::user()->email }} </small>
+                      </p>
+                    </li>
+                    <!-- Menu Body -->
+         
+                    <!-- Menu Footer-->
+                    <li class="user-footer">
+                      <div class="pull-left">
+                        <a href="#" class="btn btn-default btn-flat">perfil</a>
+                      </div>
+                      <div class="pull-right">
+                          <form id="logout-form" action="{{ url('/logout') }}" method="POST">
+                              {{ csrf_field() }}
+                              <button type="submit" class="btn btn-default" >Salir</button>
+                          </form>
+                      
+                      </div>
+                    </li>
+                 
+                  </ul>
+                </li>
                 <a href="{{url('odontologos')}}"> <span class="fa fa-users" aria-hidden="true"> </span> </a>
               </li>
               <li>
@@ -209,13 +208,14 @@
   </div>
   <script>
     window.onload = function () {
-
+        console.log(spanish_lang);
        
         $('#lista').DataTable({
           responsive: true,
           columnDefs: [
             { "orderable": false, "targets": -1 }
-          ]
+          ],
+          language: spanish_lang
         });
 
 
