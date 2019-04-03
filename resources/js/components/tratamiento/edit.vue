@@ -20,7 +20,7 @@
 					track-by="nombre" >
 
 				</vue-multiselect>
-				<input type="text" name="odontologo_id" :value="odontologo.id" v-if="odontologo">
+				<input type="text" name="odontologo_id" :value="odontologo.id" v-if="odontologo" hidden>
 			</div>
 			</div>
 			<legend class="text-primary">Odontopediatria</legend>
@@ -40,7 +40,7 @@
 						track-by="nro_pieza" >
 
 					</vue-multiselect>
-					<input type="text" name="dientes" :value="JSON.stringify(diente)">
+					<input type="text" name="dientes" :value="JSON.stringify(diente)" hidden>
 				</div>
 				<div class="form-group col-md-4">
 					<label for="anestesia">Anestesia</label>
@@ -141,7 +141,7 @@
 					<br><switches v-model="prueba_metal" theme="bootstrap" color="primary" ></switches>
 				</div>
 			</div>
-			<div v-if="impresiones_trabajo&&impresiones_trabajo&&prueba_metal" >
+			<div v-if="impresiones_preliminares&&impresiones_trabajo&&prueba_metal" >
 				<legend class="text-primary">Endodoncia</legend>
 				<div class="row">
 					<div class="form-group col-md-4">
@@ -163,8 +163,8 @@
 		</div><!-- /.box-body -->
 		<div class="box-footer">
 			<div class="pull-right">
-				<button class="btn btn-default">Cancelar</button>
-				<button class="btn btn-success">Guardar</button>
+				<button type='button' class="btn btn-default">Cancelar</button>
+				<button type="submit" class="btn btn-success">Guardar</button>
 			</div>
 		</div><!-- box-footer -->
 	</div><!-- /.box -->

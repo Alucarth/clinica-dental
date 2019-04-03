@@ -16,12 +16,9 @@ class CreateCitasTable extends Migration
         Schema::create('citas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('descripcion');
-            $table->integer('id_paciente');
-            $table->integer('id_odontologo');
             $table->date('fecha');
             $table->time('hora_inicio');
             $table->time('hora_fin');
-
 
             $table->unsignedBigInteger('odontologo_id');
             $table->foreign('odontologo_id')->references('id')->on('odontologos');

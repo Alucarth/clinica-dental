@@ -32,6 +32,7 @@ try {
     window.moment = require('moment');
 
     import "fullcalendar";
+    import "fullcalendar/dist/locale/es";
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

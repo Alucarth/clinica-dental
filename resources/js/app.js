@@ -35,6 +35,7 @@ Vue.component('vue-multiselect', require('vue-multiselect').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('crear-paciente', require('./components/paciente/create.vue').default);
 Vue.component('editar-tratamiento', require('./components/tratamiento/edit.vue').default);
+Vue.component('editar-cita', require('./components/cita/edit.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

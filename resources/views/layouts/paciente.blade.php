@@ -123,7 +123,7 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
           <li class="header">Menu del Paciente</li>
-           <li class ="active">
+           <li>
             <a href="{{url('paciente/historial/'.$paciente->id)}}">
               <i class="fa  fa-file"></i> <span>Historial Clinico</span>
              

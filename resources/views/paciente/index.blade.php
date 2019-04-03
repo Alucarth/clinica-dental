@@ -31,7 +31,7 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Apellidos</th>
-                                <th>Direccion</th>
+                                {{-- <th>Direccion</th> --}}
                                 <th>Celular</th>
                                 <th>Accion</th>
                             </tr>
@@ -44,7 +44,7 @@
 
                                 <td>{{$paciente->nombre}}</td>
                                 <td>{{$paciente->apellidos}}</td>
-                                <td>{{$paciente->direccion}}</td>
+                                {{-- <td>{{$paciente->direccion}}</td> --}}
                                 <td>{{$paciente->celular}}</td>
                                 <td>
                                 <a class="btn btn-info btn-sm " href="{{url('paciente/historial/'.$paciente->id)}}"> <i class="ion ion-android-document fa-lg  "></i> </span>
@@ -104,10 +104,4 @@
 </div><!-- /.modal -->
 
 
-@endsection
-@section('script')
-<script type="text/javascript">
-
-
-</script>
 @endsection

@@ -22,7 +22,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('pacientes','PacienteController');
     Route::resource('odontologos','OdontologoController');
     Route::resource('tratamientos','TratamientoController');
-    // Route::resource('citas','CitaController');
+    Route::resource('citas','CitaController');
     // Route::resource('odontograma','OdontogramaController');
     
     Route::get('/home', 'HomeController@index');

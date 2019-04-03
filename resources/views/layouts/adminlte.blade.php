@@ -78,6 +78,7 @@
               <?php NavLink("home","Inicio"); ?>
               <?php NavLink("pacientes","pacientes"); ?>
               <?php NavLink("citas","citas"); ?>
+              <?php NavLink("odontologos","odontologos"); ?>
               <!-- Messages: style can be found in dropdown.less-->
 
               <!-- /.messages-menu -->
@@ -208,7 +209,7 @@
   </div>
   <script>
     window.onload = function () {
-        console.log(spanish_lang);
+        // console.log(spanish_lang);
        
         $('#lista').DataTable({
           responsive: true,
@@ -217,11 +218,12 @@
           ],
           language: spanish_lang
         });
-
+        @yield('script');
 
     };
 
   </script>
+
 </body>
 
 </html>

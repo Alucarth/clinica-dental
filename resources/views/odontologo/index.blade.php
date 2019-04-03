@@ -19,7 +19,7 @@
                 <!-- Buttons, labels, and many other things can be placed here! -->
                 <!-- Here is a label for example -->
                 {{-- <span class="label label-primary">Label</span> --}}
-                 <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#odontologoModal" ><span class="fas fa-user-md"></span></a>
+                 <a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#odontologoModal" ><span class="ion ion-medkit fa-lg"></span></a>
               </div><!-- /.box-tools -->
             </div><!-- /.box-header -->
             <div class="box-body">
@@ -48,10 +48,6 @@
                                   <a class="btn btn-primary btn-sm" href="#"> <i class="ion ion-edit fa-lg"></i> </a>
                                   <a class="btn btn-danger btn-sm" href="#"> <i class="ion ion-trash-b fa-lg"></i> </a>
                                 {{-- <a class="btn btn-info btn-sm " href="{{url('odontologo/historial/'.$odontologo->id)}}"> <span class="glyphicon glyphicon-file" aria-hidden="true"></span> --}}
-                                </a>
-
-
-
                                 </td>
                             </tr>
                         @endforeach
@@ -65,8 +61,6 @@
               {{-- The footer of the box --}}
             {{-- </div>box-footer --}}
           </div><!-- /.box -->
-
-
 
         </div>
     </div>
