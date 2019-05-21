@@ -79,6 +79,7 @@
               <?php NavLink("pacientes","pacientes"); ?>
               <?php NavLink("citas","citas"); ?>
               <?php NavLink("odontologos","odontologos"); ?>
+              <?php NavLink("laboratorios","laboratios"); ?>
               <!-- Messages: style can be found in dropdown.less-->
 
               <!-- /.messages-menu -->
@@ -97,14 +98,14 @@
                     <!-- User image -->
                     <li class="user-header">
                       <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Round&hairColor=Auburn&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=BlazerShirt&eyeType=Default&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Light' class="img-circle" alt="User Image">
-      
+
                       <p>
                           {{ Auth::user()->name." " }}
                         <small>{{ Auth::user()->email }} </small>
                       </p>
                     </li>
                     <!-- Menu Body -->
-         
+
                     <!-- Menu Footer-->
                     <li class="user-footer">
                       <div class="pull-left">
@@ -115,10 +116,10 @@
                               {{ csrf_field() }}
                               <button type="submit" class="btn btn-default" >Salir</button>
                           </form>
-                      
+
                       </div>
                     </li>
-                 
+
                   </ul>
                 </li>
                 <a href="{{url('odontologos')}}"> <span class="fa fa-users" aria-hidden="true"> </span> </a>
@@ -210,7 +211,7 @@
   <script>
     window.onload = function () {
         // console.log(spanish_lang);
-       
+
         $('#lista').DataTable({
           responsive: true,
           columnDefs: [

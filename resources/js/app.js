@@ -34,6 +34,7 @@ Vue.component('vue-multiselect', require('vue-multiselect').default);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('crear-paciente', require('./components/paciente/create.vue').default);
+Vue.component('crear-laboratorio', require('./components/laboratorio/create.vue').default);
 Vue.component('editar-tratamiento', require('./components/tratamiento/edit.vue').default);
 Vue.component('editar-cita', require('./components/cita/edit.vue').default);
 /**
