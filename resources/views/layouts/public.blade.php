@@ -23,7 +23,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="#"><b>Consultorio</b> Santa Cecilia</a>
+    <a href="#"><b>Clinica Dental</b> Santa Cecilia</a>
   </div>
 
   @yield('content')
