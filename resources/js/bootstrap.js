@@ -30,7 +30,7 @@ try {
     window.jsPDF = require('jspdf');
     window.Chart = require('chart.js');
     window.moment = require('moment');
-
+    import 'jspdf-autotable';
     import "fullcalendar";
     import "fullcalendar/dist/locale/es";
 

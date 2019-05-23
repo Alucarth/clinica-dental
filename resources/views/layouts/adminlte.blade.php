@@ -124,10 +124,7 @@
                 </li>
                 <a href="{{url('odontologos')}}"> <span class="fa fa-users" aria-hidden="true"> </span> </a>
               </li>
-              <li>
-                <a href="#" data-toggle="modal" data-target="#manual"> <span class="fa fa-file-pdf-o" aria-hidden="true">
-                  </span> </a>
-              </li>
+
 
               </li>
             </ul>
@@ -189,25 +186,7 @@
   <!-- Button trigger modal -->
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="manual" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Manual de Usuario </h4>
-        </div>
-        <div class="modal-body">
-          <iframe src={{asset('manual_de_usuario.pdf')}} width="560" height="780" style="border: none;"></iframe>
-          {{-- <embed src={{asset('manual_de_usuario.pdf')}} width=“500” height=“375”> --}}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-        </div>
-      </div>
-    </div>
-  </div>
   <script>
     window.onload = function () {
         // console.log(spanish_lang);

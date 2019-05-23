@@ -5,9 +5,9 @@
 
 @section('head')
 
- 
-  <script src={{ asset("js/keyrushelper.js")}}></script> 
- 
+
+  <script src={{ asset("js/keyrushelper.js")}}></script>
+
 @endsection
 
 
@@ -17,24 +17,24 @@
 <div class="box box-success">
   <div class="box-header with-border">
     <h3 class="box-title"> Tratamientos del Paciente: {{ ucwords($paciente->nombre.' '.$paciente->apellidos)}}</h3>
-          
-              
+
+
     <div class="box-tools pull-right">
       <!-- Buttons, labels, and many other things can be placed here! -->
       <!-- Here is a label for example -->
-      
+
     <a href="{{url('paciente/tratamientos/crear/'.$paciente->id)}}" class="btn btn-success btn-sm" ><span class="fa fa-plus-square"></span> Nuevo Tratamiento</a>
 
     </div><!-- /.box-tools -->
   </div><!-- /.box-header -->
   <div class="box-body">
-  				  
+
                 <table id="lista" class="table" cellspacing="0" width="100%">
 
                     <thead>
-                        <tr> 
+                        <tr>
                             <th>Fecha </th>
-                            <th>Diagnostico</th>                            
+                            <th>Diagnostico</th>
                             <th>Odontologo</th>
                             <th>Saldo</th>
                             <th>Costo del tratamiento</th>
@@ -44,7 +44,7 @@
                     <tbody>
 
                     @foreach ($tratamientos as $tratamiento)
-              
+
                           <tr>
                             <td> {{$tratamiento->created_at}}
                             <td> {{$tratamiento->diagnostico}}</td>
@@ -57,13 +57,13 @@
                             </td>
                         </tr>
                     @endforeach
-                      
-                      
+
+
                       </tbody>
                 </table>
 </div><!-- /.box-body -->
   {{-- <div class="box-footer">
-   
+
   </div><!-- box-footer --> --}}
 </div><!-- /.box -->
 
@@ -75,7 +75,7 @@
 <script type="text/javascript">
   window.onload = function () {
 
-      
+
     $('#lista').DataTable({
       responsive: true,
       columnDefs: [

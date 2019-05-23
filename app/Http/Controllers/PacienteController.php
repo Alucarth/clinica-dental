@@ -49,17 +49,17 @@ class PacienteController extends Controller
         //
         // return $request->all();
         $user = Auth::user();
-       
+
          //para edicion del paciente
         if ($request->has('paciente_id')) {
             //
             $paciente = Paciente::where('id',$request->input('paciente_id'))->first();
-            $is_new = false;                 
+            $is_new = false;
         }else{
             $paciente = new Paciente;
             $is_new =true;
         }
-      
+
         //para registro del paciente
         $paciente->nombre = $request->input('nombre');
         $paciente->apellidos = $request->input('apellidos');
@@ -83,7 +83,7 @@ class PacienteController extends Controller
             return back()->withInput();
         }
 
-        for ($i=11; $i <= 18 ; $i++) { 
+        for ($i=11; $i <= 18 ; $i++) {
             # code...
             $diente = new Diente;
             $diente->nro_pieza = $i;
@@ -98,7 +98,7 @@ class PacienteController extends Controller
             $diente->save();
 
         }
-        for ($i=21; $i <= 28 ; $i++) { 
+        for ($i=21; $i <= 28 ; $i++) {
             # code...
             $diente = new Diente;
             $diente->nro_pieza = $i;
@@ -111,7 +111,7 @@ class PacienteController extends Controller
             $diente->palatino = 0;
             $diente->save();
         }
-        for ($i=31; $i <=38 ; $i++) { 
+        for ($i=31; $i <=38 ; $i++) {
             # code...
             $diente = new Diente;
             $diente->nro_pieza = $i;
@@ -124,7 +124,7 @@ class PacienteController extends Controller
             $diente->palatino = 0;
             $diente->save();
         }
-        for ($i=41; $i <=48 ; $i++) { 
+        for ($i=41; $i <=48 ; $i++) {
             # code...
             $diente = new Diente;
             $diente->nro_pieza = $i;
@@ -152,6 +152,7 @@ class PacienteController extends Controller
         $paciente = Paciente::where('id',$id)->first();
         //$paciente = Paciente::find($id)->first();
         $dientes = Diente::where('id_paciente',$id)->get();
+
         $odontologos = Odontologo::all();
         return view('paciente.mostrar',compact('paciente','odontologs','dientes'));
     }
@@ -244,7 +245,7 @@ class PacienteController extends Controller
     }
 
     public function storeTratamientos(Request $request)
-    {   
+    {
       //  return $request->id_tratamiento;
 
         if($request->has('id_tratamiento'))
@@ -279,11 +280,11 @@ class PacienteController extends Controller
     }
 
     public function storePagos(Request $request)
-    {   
+    {
         // return $request->id_pago;
-        
+
         if($request->has('id_pago'))
-        {   
+        {
             $pago = Pago::where('id',$request->id_pago)->first();
 
             $pago->monto=$request->monto;
@@ -296,7 +297,7 @@ class PacienteController extends Controller
 
 
              return back()->withInput();
-        }   
+        }
 
         $pago = new Pago;
 
@@ -310,7 +311,7 @@ class PacienteController extends Controller
 
 
 
-        
+
             $tratamiento = Tratamiento::where('id',$request->id_tratamiento)->first();
             // $tratamiento->descripcion = 'haber si cambia';
             $tratamiento->balance = (int) $tratamiento->balance - (int) $pago->monto;
@@ -319,14 +320,21 @@ class PacienteController extends Controller
             // return  $tratamiento;
 
          return back()->withInput();
-       
-    }   
+
+    }
 
     public function historial($id)
     {
         $paciente = Paciente::where('id',$id)->first();
         $odontologos = Odontologo::all();
-        return view('paciente.show',compact('paciente','odontologos'));
+        $tratamientos = Tratamiento::where('paciente_id',$paciente->id)->get();
+        // return $tratamientos;
+        $tabla=array();
+        foreach($tratamientos as $tratamiento)
+        {
+            array_push($tabla,array($tratamiento->created_at,$tratamiento->diagnostico,$tratamiento->odontologo->nombre,$tratamiento->costo_tratamiento));
+        }
+        return view('paciente.show',compact('paciente','odontologos','tabla'));
     }
     public function odontograma($id)
     {

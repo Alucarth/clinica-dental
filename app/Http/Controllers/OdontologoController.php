@@ -38,6 +38,7 @@ class OdontologoController extends Controller
     public function store(Request $request)
     {
         //
+        // return $request->all();
         $odontologo = new Odontologo;
         $odontologo->nombre = $request->nombre;
         $odontologo->especialidad = $request->especialidad;

@@ -85,7 +85,7 @@
 
                   <div class="form-group col-md-12">
                     <label for="nombre_paciente">Especialidad</label>
-                    <input type="text" class="form-control" name="especialidad" placeholder="Apellidos">
+                    <input type="text" class="form-control" name="especialidad" placeholder="Especialidad">
                   </div>
 
                   <div class="form-group col-md-6">

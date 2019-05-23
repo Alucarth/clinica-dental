@@ -26,9 +26,11 @@
 				<label for="Edad">Fecha de Nacimiento </label>
 				<input type="text" class="form-control" v-model="birthdate" v-mask="'##/##/####'" placeholder="dd/mm/yyyy" name="fecha_nacimiento" >
 			</div>
+
 			<div class="form-group col-md-3">
 				<label for="Edad">Edad</label>
-				<input type="number" class="form-control" :value='getAge(birthdate)' name="edad" placeholder="Edad" disabled>
+				<input type="number" class="form-control" :value='getAge(birthdate)' name="edad" placeholder="Edad" >
+				<input type="number" class="form-control" :value='getAge(birthdate)' name="birthdate" placeholder="Edad" disabled>
 			</div>
 			<div class="form-group col-md-3">
 				<label for="nombre_paciente">Email</label>
@@ -60,11 +62,11 @@
 		<div class="row">
 			<div class="form-group  col-md-6">
 				<label for="odontologo">Odontologo</label>
-				<vue-multiselect 
+				<vue-multiselect
 					v-model="odontologo"
 					:options="odontologos"
 					id="odontologo"
-					placeholder="Seleccionar Odontologo" 
+					placeholder="Seleccionar Odontologo"
 					select-label="Seleccionar"
 					deselect-label="Remover"
 					selected-label="Seleccionado"
@@ -115,7 +117,7 @@ export default {
 					let birthDate = new Date(year, month - 1, day)
 					let age = today.getFullYear() - birthDate.getFullYear();
 					let m = today.getMonth() - birthDate.getMonth();
-					if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+					if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
 					{
 						age--;
 					}
@@ -124,7 +126,7 @@ export default {
 				}else{
 					return 0;
 				}
-			
+
 			}else{
 				return 0;
 			}
@@ -132,7 +134,7 @@ export default {
 	},
 	computed:{
 		age(){
-			
+
 			// return 0;
 		}
 	},

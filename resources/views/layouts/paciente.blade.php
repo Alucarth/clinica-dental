@@ -14,7 +14,7 @@
 
       //  echo '<h1>hola</h1>';
     }
-   // $keyrus = new DavidHelper(); 
+   // $keyrus = new DavidHelper();
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,9 +60,9 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-       
+
           <!-- Notifications: style can be found in dropdown.less -->
-        
+
           <!-- Tasks: style can be found in dropdown.less -->
           <?php NavLink("pacientes","pacientes"); ?>
           <!-- User Account: style can be found in dropdown.less -->
@@ -82,7 +82,7 @@
                 </p>
               </li>
               <!-- Menu Body -->
-   
+
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
@@ -93,13 +93,13 @@
                         {{ csrf_field() }}
                         <button type="submit" class="btn btn-default" >Salir</button>
                     </form>
-                
+
                 </div>
               </li>
-           
+
             </ul>
           </li>
-        
+
         </ul>
       </div>
     </nav>
@@ -118,7 +118,7 @@
             <a href="#">Paciente </a>
           </div>
         </div>
-       
+
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
@@ -126,40 +126,40 @@
            <li>
             <a href="{{url('paciente/historial/'.$paciente->id)}}">
               <i class="fa  fa-file"></i> <span>Historial Clinico</span>
-             
+
             </a>
           </li>
-  
+
            <li>
             <a href="{{url('paciente/tratamientos/'.$paciente->id)}}">
               <i class="fa fa-plus-square"></i> <span>Tratamientos</span>
-             
+
             </a>
           </li>
-  
-  
+
+
            <li>
             <a href="{{url('paciente/odontograma/'.$paciente->id)}}">
               <i class="fa fa-calendar-o"></i> <span>Odontograma</span>
-             
+
             </a>
           </li>
-  
+
            <li>
             <a href="{{url('paciente/anamnesis/'.$paciente->id)}}">
               <i class="fa fa-calendar-plus-o"></i> <span>Anamnesis</span>
-              
+
             </a>
           </li>
-  
+
            {{-- <li>
             <a href="{{url('paciente/pagos/'.$paciente->id)}}">
               <i class="fa fa-money"></i> <span>Pagos</span>
-           
+
             </a>
           </li> --}}
-  
-          
+
+
         </ul>
     </section>
     <!-- /.sidebar -->
@@ -194,35 +194,18 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.3.6
         </div>
-        <strong>Copyright &copy; 2017 <a href="http://almsaeedstudio.com">Spectral Code</a>.</strong> 
+        <strong>Copyright &copy; 2017 <a href="http://almsaeedstudio.com">Spectral Code</a>.</strong>
     reserved.
   </footer>
 
-      <div class="modal fade" id="manual">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Manual de Usuario </h4>
-            </div>
-            <div class="modal-body">
-              <iframe src={{asset('manual_de_usuario.pdf')}} width="560" height="780" style="border: none;"></iframe>
-              {{-- <embed src={{asset('manual_de_usuario.pdf')}} width=“500” height=“375”> --}}
-            </div>  
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-            </div>
-          </div>
-        </div>
-      </div>
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
 <script>
-	
+
 
 	</script>
 @yield("script")
