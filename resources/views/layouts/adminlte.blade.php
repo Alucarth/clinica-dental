@@ -49,13 +49,13 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>C</b>SC</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Clinica Odontologica</b> Santa Cecilia</span>
+        <span class="logo-lg"><b>Clinica Dental</b> Santa Cecilia</span>
       </a>
       <nav class="navbar navbar-static-top">
 
         <div class="container">
           <div class="navbar-header">
-            <a href="../../index2.html" class="navbar-brand"> Clinica Odontologica Santa Cecilia</a>
+            <a href="../../index2.html" class="navbar-brand"> Clinica Dental Santa Cecilia</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
