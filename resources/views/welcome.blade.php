@@ -80,7 +80,7 @@
                 <div class="col-lg-5">
 
                     <h1>Santa Cecilia</h1>
-                    <h2>My Dental Clinic</h2>
+                    <h2>Clinica dental</h2>
                     <a href="" class="template-btn mt-3">Mas Informacion</a>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                 <div class="col-lg-7">
                     <div class="welcome-text mt-5 mt-lg-0">
                         <h2>Santa Cecilia</h2>
-                        <h3>My Dental Clinic</h3>
+                        <h3>Clinica Dental </h3>
                         <p class="pt-3">Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were.</p>
                         <p>Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were the boring.</p>
                         <a href="#" class="template-btn mt-3">Leer Mas</a>
