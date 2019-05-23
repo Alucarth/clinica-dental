@@ -1,99 +1,402 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Laravel</title>
+    <!-- Page Title -->
+    <title>Santa Cecilia</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <!-- Favicon -->
+    {{-- <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon"> --}}
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+    <!-- CSS Files -->
+    <link href="{{ asset('css/template.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/template.js') }}" ></script>
+    {{-- <link rel="stylesheet" href="assets/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="assets/css/style.css"> --}}
+</head>
+<body>
+    <!-- Preloader Starts -->
+    {{-- <div class="preloader">
+        <div class="spinner"></div>
+    </div> --}}
+    <!-- Preloader End -->
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+    <!-- Header Area Starts -->
+    <header class="header-area">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 d-md-flex">
+                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-mobile"></i></span> llamanos! +591 708 2563</h6>
+                        <h6 class="mr-3"><span class="mr-2"><i class="fa fa-envelope-o"></i></span> santa.cecilia@gmail.com</h6>
+                        <h6><span class="mr-2"><i class="fa fa-map-marker"></i></span> Encuentra tu localizacion</h6>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div id="header" id="home">
+            <div class="container">
+                <div class="row align-items-center justify-content-between d-flex">
+                <div id="logo">
+                    <a href="index.html"><img src="assets/images/logo/logo.png" alt="" title="" /></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                    <li class="menu-active"><a href="{{url('home')}}">Ingresar al Sistema</a></li>
+
+                        {{-- <li><a href="contact.html">Contact</a></li> --}}
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Banner Area Starts -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+
+                    <h1>Santa Cecilia</h1>
+                    <h2>My Dental Clinic</h2>
+                    <a href="" class="template-btn mt-3">Mas Informacion</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Area End -->
+
+    <!-- Feature Area Starts -->
+    <section class="feature-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature text-center item-padding">
+                        <img src="assets/images/feature1.png" alt="">
+                        <h3>Tecnologia Avanzada</h3>
+                        <p class="pt-3">Contamos con la mas alta tecnologia en lo que se refiere a equipos odontologicos</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature text-center item-padding mt-4 mt-md-0">
+                        <img src="assets/images/feature2.png" alt="">
+                        <h3>Espacios confortables</h3>
+                        <p class="pt-3">Contamos con los ambientes propicios para una buena atencion a los pacientes</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
+                        <img src="assets/images/feature3.png" alt="">
+                        <h3>Equipos de Alta Calidad</h3>
+                        <p class="pt-3">Contamos con equipos de alta precision con la especialdad en odontopediatria </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-feature text-center item-padding mt-4 mt-lg-0">
+                        <img src="assets/images/feature4.png" alt="">
+                        <h3>Odontologos Capacitados</h3>
+                        <p class="pt-3">Contamos con un staff de especialistas altamente capacitados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Area End -->
+
+    <!-- Welcome Area Starts -->
+    <section class="welcome-area section-padding3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 align-self-center">
+                    <div class="welcome-img">
+                        <img src="img/welcome.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="welcome-text mt-5 mt-lg-0">
+                        <h2>Santa Cecilia</h2>
+                        <h3>My Dental Clinic</h3>
+                        <p class="pt-3">Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were.</p>
+                        <p>Subdue whales void god which living don't midst lesser yielding over lights whose. Cattle greater brought sixth fly den dry good tree isn't seed stars were the boring.</p>
+                        <a href="#" class="template-btn mt-3">Leer Mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+    <!-- Department Area Starts -->
+    <section class="department-area section-padding4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-top text-center">
+                        <h2>Locaciones</h2>
+                        <p>Ambientes Confortables para los pacientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="department-slider owl-carousel">
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="img/IMG-20190522-WA0001.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="#"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="img/IMG-20190522-WA0004.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="img/IMG-20190522-WA0000.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-slide">
+                            <div class="slide-img">
+                                <img src="img/IMG-20190523-WA0005.jpg" alt="" class="img-fluid">
+                                <div class="hover-state">
+                                    <a href="departments.html"><i class="fa fa-stethoscope"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Department Area Starts -->
+
+
+
+    <!-- Specialist Area Starts -->
+    <section class="specialist-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-top text-center">
+                        <h2>Nuestras Especialidades</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-doctor mb-4 mb-lg-0">
+                        <div class="doctor-img">
+                            <img src="images/doctor1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="content-area">
+                            <div class="doctor-name text-center">
+                                <h3>Endodoncia</h3>
+                                <h6>Dra. Nadia Chuquimia </h6>
+                            </div>
+                            <div class="doctor-text text-center">
+                                <p>Una endodoncia es un tratamiento dental que se realiza para eliminar lo que se denomina la pulpa del diente, es decir, la parte interior del mismo donde se encuentran las venas y los nervios del diente. Este tipo de tratamientos se suelen realizar por medio de anestesia y consisten en retirar la pulpa del diente afectado para poder evitar en último término la extracción.
+                                    .</p>
+                                <ul class="doctor-icon">
+                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-doctor mb-4 mb-lg-0">
+                        <div class="doctor-img">
+                            <img src="assets/images/doctor2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="content-area">
+                            <div class="doctor-name text-center">
+                                <h3>Odontopediatria</h3>
+                                <h6>Dra. Carla Mamani</h6>
+                            </div>
+                            <div class="doctor-text text-center">
+                                <p>La odontopediatría es la especialidad encargada del manejo de la salud dental de niños y adolescentes. En  esta  etapa  podemos prevenir y diagnosticar de forma temprana alguna patología o alteración a nivel de dientes, encías o maloclusiones3 (de mordida) existentes en el desarrollo de cada niño y corregirlas a tiempo. Se debe tener presente lo importante que es la primera visita al dentista. Según esta experiencia, será su actitud frente a atenciones posteriores, incluso cuando adulto.</p>
+                                <ul class="doctor-icon">
+                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-doctor mb-4 mb-sm-0">
+                        <div class="doctor-img">
+                            <img src="assets/images/doctor3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="content-area">
+                            <div class="doctor-name text-center">
+                                <h3>Cirugía bucal</h3>
+                                <h6>sr. Leandro Cruz Laurel</h6>
+                            </div>
+                            <div class="doctor-text text-center">
+                                <p>Esta rama se ocupa de la realización de extracciones dentales complejas y de lesiones de la cavidad bucal como  el diagnóstico y tratamiento de las patologías quirúrgicas bucomaxilofaciales, tumores, quistes de los maxilares y deformidades maxilofaciales debidas a mal posiciones dentarias y alteraciones congénitas que repercuten en la función y estética facial.</p>
+                                <ul class="doctor-icon">
+                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-doctor">
+                        <div class="doctor-img">
+                            <img src="images/doctor4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="content-area">
+                            <div class="doctor-name text-center">
+                                <h3>Prótesis dental</h3>
+                                <h6>Dra. Mabel Torrez</h6>
+                            </div>
+                            <div class="doctor-text text-center">
+                                <p>Es un elemento artificial destinado a restaurar la anatomía de una o varias piezas dentarias, restaurando también la relación entre los maxilares, a la vez que devuelve la dimensión vertical, y repone los dientes.</p>
+                                <ul class="doctor-icon">
+                                    <li><a href="#"><i class="fa fa-facebook"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i><a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i><a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Specialist Area Starts -->
+
+    <!-- Hotline Area Starts -->
+    <section class="hotline-area text-center section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Telefono de Emergencia</h2>
+                    <span>(+01) – 256 567 550</span>
+                    <p class="pt-3">Proveemos servicio de emergencia 24/7. Por favor siente libre de llamarnos <br>por cualquier caso de emergencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hotline Area End -->
+
+
+
+    <!-- Footer Area Starts -->
+    <footer class="footer-area section-padding">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
+                        <div class="single-widget-home mb-5 mb-lg-0">
+                            <h3 class="mb-4">Notificaciones y Ofertas</h3>
+                            <p class="mb-4">Puedes suscribiste para resivir notificacioes y ofertas.</p>
+                            <form action="#">
+                                <input type="email" placeholder="Your email here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email here'" required>
+                                <button type="submit" class="template-btn">Suscribite Ahora</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 offset-xl-1 col-lg-3">
+                        <div class="single-widge-home">
+                            <h3 class="mb-4">Contactanos en Instagram</h3>
+                            <div class="feed">
+                                <img src="img/feed1.jpg" alt="feed">
+                                <img src="img/feed2.jpg" alt="feed">
+                                <img src="img/feed3.jpg" alt="feed">
+                                <img src="img/feed4.jpg" alt="feed">
+                                <img src="img/feed5.jpg" alt="feed">
+                                <img src="img/feed6.jpg" alt="feed">
+                                <img src="img/feed7.jpg" alt="feed">
+                                <img src="img/feed8.jpg" alt="feed">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <span>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Santa Cecilia <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Eliana Soft</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+
+    <!-- Javascript -->
+    {{-- <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/vendor/bootstrap-4.1.3.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/owl-carousel.min.js"></script>
+    <script src="assets/js/vendor/jquery.datetimepicker.full.min.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/superfish.min.js"></script>
+    <script src="assets/js/main.js"></script> --}}
+
+</body>
 </html>
