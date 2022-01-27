@@ -1411,9 +1411,9 @@ cache-base@^1.0.1:
     unset-value "^1.0.0"
 
 cached-path-relative@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/cached-path-relative/-/cached-path-relative-1.0.2.tgz#a13df4196d26776220cc3356eb147a52dba2c6db"
-  integrity sha512-5r2GqsoEb4qMTTN9J+WzXfjov+hjxT+j3u5K+kIVNIwAd99DLCJE9pBIMP1qVeybV6JiijL385Oz0DcYxfbOIg==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cached-path-relative/-/cached-path-relative-1.1.0.tgz#865576dfef39c0d6a7defde794d078f5308e3ef3"
+  integrity sha512-WF0LihfemtesFcJgO7xfOoOcnWzY/QHR4qeDqV44jPU3HTI54+LnfXK3SA27AVVGCdZFgjjFFaqUA9Jx7dMJZA==
 
 call-me-maybe@^1.0.1:
   version "1.0.1"
@@ -3694,6 +3694,11 @@ jquery@>=1.10, jquery@>=1.5, jquery@>=1.7, "jquery@>=1.7.1 <4.0.0", jquery@>=1.8
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
+jquery@>=1.8.3:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
@@ -4694,6 +4699,13 @@ osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+owl.carousel@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
+  integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
+  dependencies:
+    jquery ">=1.8.3"
 
 p-defer@^1.0.0:
   version "1.0.0"
